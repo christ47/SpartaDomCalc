@@ -49,33 +49,39 @@
       for (var i = 0; i < equalsign.length; i++) {
       equalsign[i].addEventListener('click', function(event){
 
-          console.log(eval(myString));
+          console.log(eval(myString))
 
-          document.getElementById('screen').innerHTML = eval(myString)
+          document.getElementById('screen').innerHTML = eval(myString);
       })
       }
   })        //
-          // {
           //
-          //   var displayedbutton = event.target.button;
+
+
+          document.addEventListener('DOMContentLoaded',function() {
+            var clearFunc = document.querySelectorAll('.buttonClear');
+
+
+              for (var i = 0; i < clearFunc.length; i++) {
+              clearFunc[i].addEventListener('click', function(event){
+
+                document.getElementById('screen').innerHTML
+                = this.value;
+                var cleared = this.value;
+                myString == cleared ;
+                console.log(cleared);
+
+              }
+              )
+              }
+          })
+          // for (var i = 0; i < OpButton.length; i++) {
+          //   OpButton[i].addEventListener('click',function(event){
+          //     document.getElementById('screen').innerHTML
+          //     += this.value;
+          //     var Op = this.value;
+          //     console.log(Op);
+          //     myString += Op;
+  //
+
           //
-          //   document.getElementById('screen').innerHTML = displayedbutton;
-          //
-          //   console.log(displayedbutton);
-
-// var clear =   document.getElementsByClassName('clear')[0];
-
-
-
-    //   }
-    // })
-      //   switch () {
-      //     case expression:
-      //
-      //       break;
-      //     default:
-      //
-      //   }
-      //
-      //
-      // })
